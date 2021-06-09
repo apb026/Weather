@@ -1,0 +1,201 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/gradient_bg"
+    tools:context=".SecondActivity">
+
+    <RelativeLayout
+        android:visibility="visible"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_centerInParent="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginTop="80dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:id="@+id/img_status"
+                android:layout_gravity="center"
+                android:layout_width="150dp"
+                android:layout_height="150dp"
+                android:src="@drawable/sunrise"/>
+
+            <TextView
+                android:id="@+id/status"
+                android:fontFamily="sans-serif-thin"
+                android:textSize="50sp"
+                android:layout_gravity="center"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Clear"/>
+
+            <LinearLayout
+                android:id="@+id/addressContainer"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="center">
+
+                <TextView
+                    android:id="@+id/city"
+                    android:textSize="24sp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Austin, "/>
+
+                <TextView
+                    android:id="@+id/country"
+                    android:textSize="24sp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="TX"/>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/detailsContainer"
+            android:orientation="vertical"
+            android:layout_marginBottom="30dp"
+            android:layout_alignParentBottom="true"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:weightSum="4"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#3CF1EBF1">
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/currentTemp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="sans-serif-thin"
+                        android:text="80°C"
+                        android:textSize="30sp"/>
+
+                    <TextView
+                        android:id="@+id/min_temp_max"
+                        android:textSize="18sp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="H 90  L 78"/>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:padding="8dp"
+                    android:orientation="vertical"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:id="@+id/status_1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="24sp"
+                        android:text="Wed"/>
+                    <Space
+                        android:layout_width="5dp"
+                        android:layout_height="wrap_content"/>
+
+                    <ImageView
+                        android:id="@+id/status_img_1"
+                        android:layout_width="50dp"
+                        android:layout_height="50dp"
+                        android:src="@drawable/cloudy">
+                    </ImageView>
+
+                    <Space
+                        android:layout_width="5dp"
+                        android:layout_height="wrap_content"/>
+
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:padding="8dp"
+                    android:orientation="vertical"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:id="@+id/status_2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="24sp"
+                        android:text="Thu"/>
+                    <Space
+                        android:layout_width="5dp"
+                        android:layout_height="wrap_content"/>
+
+                    <ImageView
+                        android:id="@+id/status_img_2"
+                        android:layout_width="50dp"
+                        android:layout_height="50dp"
+                        android:src="@drawable/cloudy">
+                    </ImageView>
+
+                    <Space
+                        android:layout_width="5dp"
+                        android:layout_height="wrap_content"/>
+
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:padding="8dp"
+                    android:orientation="vertical"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:id="@+id/status_3"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="24sp"
+                        android:text="Fri"/>
+                    <Space
+                        android:layout_width="5dp"
+                        android:layout_height="wrap_content"/>
+
+                    <ImageView
+                        android:id="@+id/status_img_3"
+                        android:layout_width="50dp"
+                        android:layout_height="50dp"
+                        android:src="@drawable/cloudy">
+                    </ImageView>
+
+                    <Space
+                        android:layout_width="5dp"
+                        android:layout_height="wrap_content"/>
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </RelativeLayout>
+
+</RelativeLayout>

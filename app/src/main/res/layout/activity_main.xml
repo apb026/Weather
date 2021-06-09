@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/gradient_bg"
+    android:padding="25dp"
+    tools:context=".MainActivity">
+
+    <ImageView
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:layout_centerHorizontal="true"
+        android:src="@drawable/nights" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/uname"
+        android:layout_marginBottom="90dp"
+        android:gravity="center_horizontal"
+        android:text="Weather App"
+        android:textSize="34sp" />
+
+    <EditText
+        android:id="@+id/uname"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:layout_centerVertical="true"
+        android:layout_marginBottom="10dp"
+        android:background="@android:color/transparent"
+        android:hint="Enter Username : Atharva"
+        android:inputType="textPersonName"
+        android:textColor="#FFFFFF"
+        android:textColorHint="@color/colorAccent" />
+
+    <EditText
+        android:id="@+id/upass"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/uname"
+        android:layout_marginTop="20dp"
+        android:background="@android:color/transparent"
+        android:hint="Enter Password : 12345"
+        android:inputType="numberPassword"
+        android:textColor="#FFFFFF"
+        android:textColorHint="@color/colorAccent" />
+
+    <Button
+        android:id="@+id/btn_submit"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:text="Submit"
+        android:textColor="#000" />
+
+</RelativeLayout>
